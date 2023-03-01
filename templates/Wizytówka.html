@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My first page</title>
+        {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='wizytówka.css') }}">
+        {% endblock %}
+    </head>
+    <body>
+        <h3 class = "head" > Hi! I'm glad to see you here! </h3>
+        {% block content %}
+        <p> <img src = "https://static.wixstatic.com/media/b262ed_11363e2e62674257bcde52f1a7267407~mv2_d_3849_3353_s_4_2.jpg/v1/fill/w_383,h_333,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/b262ed_11363e2e62674257bcde52f1a7267407~mv2_d_3849_3353_s_4_2.jpg" class = "image"  title="zdjęcie mnie" align= left > Let me tell you a few words about myself. I'm a simple guy living in a Northern Poland, woods and lakes lover,passionate abot books and old cars.
+        </p>
+        {% endblock %}
+        <p></p>
+        <h3>O mnie:</h3>
+        <h3>Imię: Dominik </h3>
+        <h3>Nazwisko: Gabiński </h3>
+    </body>
+</html>

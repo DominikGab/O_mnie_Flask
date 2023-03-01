@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My first page</title>
+        {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='Wizytówka.css') }}">
+        {% endblock %}
+    </head>
+    <body>
+        <h3 class = "head" > Feel free, to message me! </h3>
+        {% block content %}
+        <p> <img src = "https://static.wixstatic.com/media/b262ed_11363e2e62674257bcde52f1a7267407~mv2_d_3849_3353_s_4_2.jpg/v1/fill/w_383,h_333,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/b262ed_11363e2e62674257bcde52f1a7267407~mv2_d_3849_3353_s_4_2.jpg">
+        </p>
+        {% endblock %}
+        <h3>Kontakt:</h3>
+        <li><strong>email:</strong> gabinski.dominik@gmail.com</li>
+        <li><strong>telefon:</strong>007</li>
+        <h3>Wyślij wiadomość: </h3>
+        <form action="" method="POST">
+            <input name="wpisz wiadomość"/>
+            <input type="submit"/>
+        </form>
+    </body>
+</html>

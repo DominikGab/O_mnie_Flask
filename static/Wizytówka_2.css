@@ -1,0 +1,21 @@
+
+
+body {
+    background: lightgrey;
+    font-family: Georgia;
+}
+
+p {
+    text-align: center
+    }
+
+.image {
+    width: 200px;
+    height : auto;
+    margin : 10px;    
+}
+
+h3 {
+    background-color:grey;
+    color: white;
+}

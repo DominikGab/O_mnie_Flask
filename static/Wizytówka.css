@@ -1,0 +1,22 @@
+
+
+body {
+    background: lightgrey;
+    font-family: Georgia;
+}
+
+p {
+    text-align: center
+    }
+
+.image {
+    width: 250px;
+    height : auto;
+    margin : 10px;  
+    padding : 10px;  
+}
+
+h3 {
+    background-color:grey;
+    color: white;
+}
